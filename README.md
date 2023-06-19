@@ -1,6 +1,6 @@
 # Java
 
-This is a Java engine used to launch Java apps on [Nanobox](http://nanobox.io).
+This is a Java engine used to launch Java apps on [Microbox](http://microbox.cloud).
 
 ## Usage
 To use the Java engine, specify `java` as your `engine` in your boxfile.yml.
@@ -20,7 +20,7 @@ Gradle (you can customize with the `compile` option in the [gradle settings](#gr
 - `gradle build`
 
 ## Basic Configuration Options
-This engine exposes configuration options through the [boxfile.yml](http://docs.nanobox.io/app-config/boxfile/), a yaml config file used to provision and configure your app's infrastructure when using Nanobox.
+This engine exposes configuration options through the [boxfile.yml](https://docs.microbox.cloud/app-config/boxfile/), a yaml config file used to provision and configure your app's infrastructure when using Microbox.
 
 
 #### Overview of Basic Boxfile Configuration Options
@@ -33,7 +33,7 @@ run.config:
 
     # Maven Settings
     maven_version: '3.3'
-    
+
     # Gradle Settings
     gradle_version: '4.2'
 
@@ -42,9 +42,9 @@ run.config:
 ```
 
 ##### Quick Links
-[Java Settings](#java-settings)  
-[Maven Settings](#maven-settings)  
-[Gradle Settings](#gradle-settings)  
+[Java Settings](#java-settings)
+[Maven Settings](#maven-settings)
+[Gradle Settings](#gradle-settings)
 [Node.js Settings](#node-js-settings)
 
 ---
@@ -102,7 +102,7 @@ run.config:
   engine.config:
     maven_version: '3.3'
 ```
-#### compile 
+#### compile
 
 Define a custom build command. Useful if you need to do something other than the default `mvn -T 4.0C -B -DskipTests=true clean install` like `mvn package`.
 
@@ -130,7 +130,7 @@ run.config:
     gradle_version: '4.2'
 ```
 
-#### compile 
+#### compile
 
 Define a custom build command. Useful if you need to do something other than the default `gradle build` like `gradle shadowJar`.
 
@@ -150,7 +150,7 @@ Many applications utilize Javascript tools in some way. This engine allows you t
 ---
 
 #### nodejs_runtime
-Specifies which Node.js runtime and version to use. You can view the available Node.js runtimes in the [Node.js engine documentation](https://github.com/nanobox-io/nanobox-engine-nodejs#runtime).
+Specifies which Node.js runtime and version to use. You can view the available Node.js runtimes in the [Node.js engine documentation](https://github.com/mu-box/microbox-engine-nodejs#runtime).
 
 ```yaml
 run.config:
@@ -161,4 +161,4 @@ run.config:
 ---
 
 ## Help & Support
-This is a Java engine provided by [Nanobox](http://nanobox.io). If you need help with this engine, you can reach out to us in the [Nanobox Slack channel](https://nanoboxio.slack.com) (access can be requested at [slack.nanoapp.io](http://slack.nanoapp.io)). If you are running into an issue with the engine, feel free to [create a new issue on this project](https://github.com/nanobox-io/nanobox-engine-java/issues/new).
+This is a Java engine provided by [Microbox](http://microbox.cloud). If you need help with this engine, you can reach out to us in the [Microbox Discord](https://discord.gg/MCDdHfy). If you are running into an issue with the engine, feel free to [create a new issue on this project](https://github.com/mu-box/microbox-engine-java/issues/new).

@@ -3,7 +3,7 @@
 # vim: ts=2 sw=2 ft=bash noet
 
 # source the Nos framework
-. /opt/nanobox/nos/common.sh
+. /opt/microbox/nos/common.sh
 
 # initialize Nos with the original arguments
 nos_init "$@"
@@ -13,7 +13,7 @@ nos_init "$@"
 
 # dynamically generate a Boxfile from a template,
 # and print to stdout
-if [[ $(grep -c build_triggers /opt/nanobox/hooks/lib/boxfile.rb) -gt 1 ]]; then
+if [[ $(grep -c build_triggers /opt/microbox/hooks/lib/boxfile.rb) -gt 1 ]]; then
 	cat <<-END
 	run.config:
 	  build_triggers:

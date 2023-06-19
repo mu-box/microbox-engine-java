@@ -10,7 +10,7 @@ buildscript {
 apply plugin: 'java'
 apply plugin: 'com.github.johnrengelman.shadow'
 
-group = 'io.nanobox.helloworld'
+group = 'cloud.microbox.helloworld'
 version = '1.0'
 
 description = ""
